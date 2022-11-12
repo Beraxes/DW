@@ -1,7 +1,7 @@
 CREATE SCHEMA IF NOT EXISTS `DWtaller1` DEFAULT CHARACTER SET utf8 COLLATE utf8_spanish_ci ;
 USE `DWtaller1` ;
 
-DROP TABLE IF EXISTS `DWtaller1`.`Categorias`
+DROP TABLE IF EXISTS `DWtaller1`.`Categorias`;
 
 CREATE TABLE IF NOT EXISTS `DWtaller1`.`Categorias` (
   `idCategoria` INT(2) NOT NULL AUTO_INCREMENT,
@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS `DWtaller1`.`Categorias` (
   PRIMARY KEY (`idCategoria`))
 ENGINE = InnoDB;
 
-DROP TABLE IF EXISTS `DWtaller1`.`Persona`
+DROP TABLE IF EXISTS `DWtaller1`.`Persona`;
 CREATE TABLE IF NOT EXISTS `DWtaller1`.`Persona` (
   `idPersona` INT(8) NOT NULL AUTO_INCREMENT,
   `idCategoria` INT(2) NOT NULL,
